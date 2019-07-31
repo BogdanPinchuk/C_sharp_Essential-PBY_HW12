@@ -28,6 +28,7 @@ namespace LesApp2
         /// </summary>
         internal Presenter Presenter { get; private set; }
 
+        #region Події
         /// <summary>
         /// Подія запуску секундоміра
         /// </summary>
@@ -44,7 +45,7 @@ namespace LesApp2
         /// Подія оновлення лічильника на формі
         /// </summary>
         private event EventHandler eUpdate = null;
-        
+
         /// <summary>
         /// Подія запуску
         /// </summary>
@@ -76,7 +77,8 @@ namespace LesApp2
         {
             add { eUpdate += value; }
             remove { eUpdate -= value; }
-        }
+        } 
+        #endregion
 
         /// <summary>
         /// Конструктор
@@ -89,6 +91,7 @@ namespace LesApp2
             Presenter = new Presenter(this);
         }
 
+        #region Обробка клавіш
         /// <summary>
         /// Дія при натисканні на клавішу Старт
         /// </summary>
@@ -118,7 +121,8 @@ namespace LesApp2
         {
             eReset();
             eUpdate(sender, e);
-        }
+        } 
+        #endregion
 
     }
 

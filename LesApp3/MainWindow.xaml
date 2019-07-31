@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:LesApp3"
         mc:Ignorable="d"
         Title="Калькулятор" Height="170.933" Width="492.933">
-    <StatusBar Height="22" VerticalAlignment="Bottom" BorderBrush="#FF111111">
+    <!--<StatusBar Height="22" VerticalAlignment="Bottom" BorderBrush="#FF111111">
         <TextBox Text="Статус панель" BorderThickness="0" Background="#FFF1EDED" FontStyle="Italic"/>
-    </StatusBar>
+    </StatusBar>-->
 </Window>
